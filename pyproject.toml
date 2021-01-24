@@ -8,9 +8,16 @@ authors = ["David Aronchick <aronchick@gmail.com>"]
 python = "^3.8"
 ipython = "^7.19.0"
 pytest = "^6.2.1"
+sphinx-rtd-theme = "^0.5.1"
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+requires = [
+    "poetry-core>=1.0.0",
+    "setuptools>=30.3.0,<50",
+    "wheel",
+    "pytest-runner",
+    "setuptools_scm>=3.3.1",
+]

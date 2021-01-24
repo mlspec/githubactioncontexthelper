@@ -16,24 +16,26 @@ with open('README.md', 'r') as f:
 
 # package configuration - for reference see:
 # https://setuptools.readthedocs.io/en/latest/setuptools.html#id9
+#     version=f'{about["__version__"]}.{datetime.datetime.now().strftime("%Y%m%d%H%M%S")}',
+
 setup(
     name=about['__title__'],
     description=about['__description__'],
     long_description=readme,
     long_description_content_type='text/markdown',
-    version=f'{about["__version__"]}.{datetime.datetime.now().strftime("%Y%m%d%H%M%S")}',
+    version=f'{about["__version__"]}',
     author=about['__author__'],
     author_email=about['__author_email__'],
     url=about['__url__'],
     packages=['githubactioncontexthelper'],
     include_package_data=True,
     python_requires=">=3.8.*",
-    install_requires=[],
+    install_requires=['setuptools'],
     license=about['__license__'],
     zip_safe=False,
-    entry_points={
-        'console_scripts': ['py-package-template=githubactioncontexthelper.contexthandler:main'],
-    },
+    # entry_points={
+    #     'console_scripts': ['py-package-template=githubactioncontexthelper.contexthandler:main'],
+    # },
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
