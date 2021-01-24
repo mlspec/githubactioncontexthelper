@@ -1,8 +1,8 @@
-The py_pkg Package
+The githubactioncontexthelper Package
 ==================
 
-.. automodule:: py_pkg.curves
+.. automodule:: githubactioncontexthelper.save_context
     :members:
 
-.. automodule:: py_pkg.entry_points
+.. automodule:: githubactioncontexthelper.load_context
     :members:

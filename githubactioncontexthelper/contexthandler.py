@@ -1,5 +1,5 @@
 """
-py_pkg.curves.py
+githubactioncontexthelper.contexthandler.py
 ~~~~~~~~~~~~~~~~
 
 This exaple module contains classes that model economic supply and
@@ -13,8 +13,6 @@ projects.
 import abc
 from dataclasses import dataclass
 from typing import Dict, Optional, Sequence, Tuple, TypeVar
-
-import numpy as np  # type: ignore
 
 
 class SupplyCurve:

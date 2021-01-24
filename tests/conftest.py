@@ -13,23 +13,16 @@ from typing import Any, Dict, List
 
 import pytest
 
-from py_pkg.curves import SupplyCurve, DemandCurve
+from githubactioncontexthelper import load_context, save_context
 
+def save_context(context) -> None:
+    """Test printing out context data.
 
-def load_test_data() -> List[Dict[str, Any]]:
-    """Load test data from JSON file.
-
-    :return: Test data.
-    :rtype: Dict[str, Any]
+    :return: None
+    :rtype: None
     """
 
-    config_file_path = 'tests/test_data/supply_demand_data.json'
-    with open(config_file_path) as file:
-        json_data = file.read()
-
-    data = json.loads(json_data)
-    return data['supply_demand']
-
+    raise NotImplemented
 
 @pytest.fixture
 def supply_curve() -> SupplyCurve:
